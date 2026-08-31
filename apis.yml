@@ -1,8 +1,8 @@
 name: Xelta - Create Images, Videos & More with Generative AI
 description: >-
-  Xelta AI Studio is a credit-based generative-AI content platform for creating images, videos, audio, micro-dramas,
-  ads, and social content. It exposes an agent-native interface via a hosted MCP server and an llms.txt, but does not
-  publish a conventional public REST/GraphQL API.
+  Xelta AI is an all-in-one generative AI creative studio unifying 90+ AI models for image generation, video creation,
+  voice synthesis, and marketing automation. It exposes a hosted MCP server for agent-native access and publishes an
+  llms.txt site guide. A REST API is advertised in marketing copy but not publicly documented.
 url: >-
   https://raw.githubusercontent.com/api-evangelist/xelta-create-images-videos-amp-more-with-generative-ai/refs/heads/main/apis.yml
 created: '2026-08-31'
@@ -19,12 +19,16 @@ tags:
   - mcp
   - agent-native
   - content-creation
+  - text-to-video
+  - creative-tools
+  - marketing-automation
+  - social-media-content
 apis:
   - name: Xelta MCP Server
     description: >-
-      Hosted Model Context Protocol server exposing Xelta generation, workflows, marketing studio, analytics,
-      workspaces, and automation tools. Connects via OAuth-style Xelta account sign-in; usable from Claude, Cursor, and
-      ChatGPT. Consumption is tied to account credit balance.
+      Hosted Model Context Protocol server providing agent-native access to Xelta's generation, workflows, marketing
+      studio, analytics, workspaces, and automation tools. Connects via custom connector with account OAuth sign-in;
+      streamable-HTTP transport at a single /mcp endpoint.
     humanURL: https://xelta.ai/mcp
     baseURL: https://mcp.xelta.ai/mcp
     tags:
@@ -38,6 +42,10 @@ apis:
       - mcp
       - agent-native
       - content-creation
+      - text-to-video
+      - creative-tools
+      - marketing-automation
+      - social-media-content
     properties:
       - type: MCPServer
         url: https://mcp.xelta.ai/mcp
@@ -48,8 +56,10 @@ apis:
 maintainers:
   - FN: Xelta Pvt Ltd
     url: https://xelta.ai
+  - FN: Xelta - Create Images, Videos & More with Generative AI
+    url: https://xelta.ai
 generated:
   by: apis.io/add
   model: claude-opus-4-8
-  confidence: 85
-  at: '2026-08-31T10:27:09.017Z'
+  confidence: 80
+  at: '2026-08-31T16:44:58.067Z'
