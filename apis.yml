@@ -1,0 +1,55 @@
+name: Xelta - Create Images, Videos & More with Generative AI
+description: >-
+  Xelta AI Studio is a credit-based generative-AI content platform for creating images, videos, audio, micro-dramas,
+  ads, and social content. It exposes an agent-native interface via a hosted MCP server and an llms.txt, but does not
+  publish a conventional public REST/GraphQL API.
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/xelta-create-images-videos-amp-more-with-generative-ai/refs/heads/main/apis.yml
+created: '2026-08-31'
+modified: '2026-08-31'
+specificationVersion: '0.21'
+tags:
+  - ai-image
+  - ai-video
+  - ai-audio
+  - generative-ai
+  - video-editing
+  - marketing-ads
+  - social-automation
+  - mcp
+  - agent-native
+  - content-creation
+apis:
+  - name: Xelta MCP Server
+    description: >-
+      Hosted Model Context Protocol server exposing Xelta generation, workflows, marketing studio, analytics,
+      workspaces, and automation tools. Connects via OAuth-style Xelta account sign-in; usable from Claude, Cursor, and
+      ChatGPT. Consumption is tied to account credit balance.
+    humanURL: https://xelta.ai/mcp
+    baseURL: https://mcp.xelta.ai/mcp
+    tags:
+      - ai-image
+      - ai-video
+      - ai-audio
+      - generative-ai
+      - video-editing
+      - marketing-ads
+      - social-automation
+      - mcp
+      - agent-native
+      - content-creation
+    properties:
+      - type: MCPServer
+        url: https://mcp.xelta.ai/mcp
+      - type: Documentation
+        url: https://xelta.ai/mcp
+      - type: LLMsTxt
+        url: https://xelta.ai/llms.txt
+maintainers:
+  - FN: Xelta Pvt Ltd
+    url: https://xelta.ai
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 85
+  at: '2026-08-31T10:27:09.017Z'
