@@ -1,0 +1,61 @@
+# Xelta AI Studio
+
+## Overview
+Xelta AI Studio is an integrated platform for creating stunning images, videos, and micro-dramas with AI. It allows users to orchestrate professional content without complex prompts.
+
+## Key Features
+
+### AI Tools & Services
+
+#### Studio Section (/app/studio)
+The Studio section provides access to a comprehensive set of AI-powered creative tools. Users must be authenticated to use these tools. Key features include:
+
+- **Instant Ads**: Create intelligent advertising content with AI
+- **Magic Cut**: Automatically cut and edit videos using AI algorithms
+- **AI Ad**: Generate AI-powered advertising content
+- **Photo Lab**: Edit and enhance photos with advanced AI tools
+- **Home Design**: Generate interior and exterior home designs in various styles
+- **Lip Sync**: Sync audio with video lip movements for realistic dubbing
+- **Background Remover**: Remove backgrounds from images with precision
+- **Ai-Voice Cover**: Generate musical lip-sync from images and audio
+- **Gen Avatar**: Create custom avatars from images
+- **Creating Portfolio**: Scrape LinkedIn profiles and companies to create portfolios
+
+#### Flow Section (/app/flow)
+The Flow section offers workflow-based content creation tools that guide users through specific creative processes:
+
+- **Microdrama**: Create short, engaging micro-dramas with AI assistance
+- **Movie Trailer**: Generate promotional videos and teaser content
+- **Comic Flow**: Design and create comic strips and graphic novels
+- **Microcourse (Academia)**: Create educational micro-courses with AI content generation
+
+#### Additional Features
+- **AI Text Remover**: Remove text from images using AI
+- **UGC Video Generation**: Generate user-generated content style videos
+- **Brand Poster Designer**: Create professional brand posters
+- **Magazine Cover Creator**: Design custom magazine covers
+- **Product Grid Generator**: Generate product grid layouts
+- **Video Dubbing**: Dub videos in different languages
+- **Video Stitching**: Stitch multiple video clips together
+
+## Core Pages
+- **Home**: Main landing page with hero section and features
+- **About Us**: Company story, mission, and values
+- **Models**: Browse and access AI models
+- **Pricing**: Credit-based pricing plans
+- **FAQ**: Frequently asked questions
+- **Contact**: Get in touch with the team
+- **Dashboard**: User's personal dashboard with project management
+- **Studio**: AI content creation tools (requires authentication)
+- **Flow**: Workflow-based content creation tools
+
+## Technology
+Xelta AI Studio is built with Next.js, React, TypeScript, and Tailwind CSS. It leverages advanced AI models for content creation and manipulation. The platform uses a credit-based system where users pay for access to premium features and AI processing.
+
+## Mission
+- **Empower**: Enable creators and businesses to produce professional content with ease
+- **Enable**: Make AI-driven content creation accessible to everyone
+- **Elevate**: Raise the standard of digital content creation
+
+## Contact
+For more information, visit xelta.ai or contact the team through the website's contact page.

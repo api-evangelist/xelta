@@ -1,0 +1,98 @@
+generated: '2026-09-01'
+method: searched+generated
+source: Provider-published Agent Skills, saved VERBATIM from the first-party npm package @xelta999/skills-cli v0.1.6 (published
+  2026-07-24, homepage https://xelta.ai, maintainer biz@matchbestsoftware.com, repo github.com/matchbest-group/xelta_skills).
+  Nothing here was authored by API Evangelist — these are Xelta's own SKILL.md files, copied unchanged from the published
+  tarball https://registry.npmjs.org/@xelta999/skills-cli/-/skills-cli-0.1.6.tgz (HTTP 200).
+description: Five packaged Agent Skills Xelta ships for Claude Code, Cursor and Codex. Every skill drives Xelta's hosted MCP
+  server (https://mcp.xelta.ai/mcp) rather than the REST API — the `allowed-tools:` frontmatter in each file names the real
+  MCP tools, which is how the tool inventory in mcp/xelta-mcp.yml was established without an authenticated tools/list.
+distribution:
+  npm: '@xelta999/skills-cli'
+  version: 0.1.6
+  published: '2026-07-24'
+  cli: xelta-skills add [skill] [--host claude|cursor|codex]
+  alternates:
+  - npx skills add matchbest-group/xelta_skills
+  - gh skill install matchbest-group/xelta_skills
+  - /plugin marketplace add matchbest-group/xelta_skills
+  source_repo: https://github.com/matchbest-group/xelta_skills
+  source_repo_status: 404 to the anonymous GitHub API on 2026-09-01 — the repo the package and the install instructions point
+    at is private or renamed. The npm tarball is the only public copy.
+  license: MIT
+  install_targets:
+    claude: ~/.claude/skills
+    cursor: ~/.cursor/plugins
+    codex: ~/.codex/plugins
+skills:
+- name: xelta-generate
+  file: skills/xelta-generate.md
+  version: 0.1.0
+  invoke: /xelta:generate
+  description: Generate images (a 3-call model/resolution wizard), mixboards (grids of images from one prompt), short video
+    reels, and street-art/graffiti brand ads; also checks credit balance and connector status.
+  mcp_tools:
+  - generate_image
+  - create_mixboard
+  - create_reel
+  - generate_street_ad
+  - check_balance
+  - xelta_connection_status
+- name: xelta-websites
+  file: skills/xelta-websites.md
+  version: 0.1.0
+  invoke: /xelta:websites
+  description: Generate and optionally deploy an AI website with Xelta's Pomeli Website Builder (deploy:true publishes live
+    to Vercel), and list previously generated sites.
+  mcp_tools:
+  - build_website
+  - get_website_history
+- name: xelta-prompt-enhance
+  file: skills/xelta-prompt-enhance.md
+  version: 0.1.0
+  invoke: /xelta:prompt-enhance
+  description: Turns a rough prompt (English or Hinglish) into three distinct enhanced options before anything is generated,
+    then hands the pick to the right generation skill.
+  mcp_tools:
+  - generate_image
+  - create_mixboard
+  - create_reel
+  - generate_street_ad
+  - build_website
+  - check_balance
+  - xelta_connection_status
+- name: xelta-real-estate
+  file: skills/xelta-real-estate.md
+  version: 0.1.0
+  invoke: /xelta:real-estate
+  description: Real-estate prompt builder — shot-type templates, multi-scene reel shot lists, a session-persisted house style,
+    caption pairing, and batch prompt sets for a listing.
+  references:
+  - skills/references/xelta-real-estate-shot-templates.md
+  mcp_tools:
+  - generate_image
+  - create_mixboard
+  - create_reel
+  - check_balance
+  - xelta_connection_status
+- name: xelta-image-to-prompt
+  file: skills/xelta-image-to-prompt.md
+  version: 0.1.0
+  invoke: /xelta:image-to-prompt
+  description: Reverse-prompting for property photos — scene/lighting/style/material breakdown, three prompt variants, match-style
+    mode, batch upload, optional prompt-to-video upgrade. Analysis uses the agent's own vision; no Xelta tool call for that
+    step.
+  mcp_tools:
+  - generate_image
+  - create_mixboard
+  - create_reel
+  - check_balance
+  - xelta_connection_status
+notes:
+- The skills bind to MCP tool ids namespaced for the Claude connector (mcp__claude_ai_xelta__<tool>). The underlying tool
+  names are the segment after the last double underscore and are used unnamespaced throughout this repo.
+- None of the five skills touch the REST API at api.xelta.ai. Xelta's agent surface and its REST surface are disjoint products
+  — see mcp/xelta-tool-crosswalk.yml.
+note_authorship: 'Five of the six skills here are Xelta''s own, saved verbatim (method: searched). The sixth, xelta-rest-generate-and-poll,
+  is authored by API Evangelist (method: generated) and is marked as such on the entry and in its own frontmatter. Xelta publishes
+  no REST-grounded skill.'
