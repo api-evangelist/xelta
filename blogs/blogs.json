@@ -1,0 +1,14 @@
+{
+  "repo": "xelta",
+  "feeds": [
+    {
+      "source": "https://xelta.ai/faqs",
+      "feed_url": "https://xelta.ai/faqs",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-06T19:17:18Z"
+}
