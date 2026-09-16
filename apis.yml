@@ -15,6 +15,23 @@ modified: '2026-09-01'
 specificationVersion: '0.21'
 tags:
 - ai-image
+- AI Video
+- AI Audio
+- Generative AI
+- Video Editing
+- Marketing Ads
+- social-automation
+- MCP
+- agent-native
+- Content Creation
+- Text-to-Video
+- Creative Tools
+- Marketing Automation
+- social-media-content
+- Website Builder
+- credit-based-pricing
+tags_raw:
+- ai-image
 - ai-video
 - ai-audio
 - generative-ai
@@ -51,6 +68,14 @@ apis:
   humanURL: https://api.xelta.ai/api-docs/
   baseURL: https://api.xelta.ai
   tags:
+  - Generative AI
+  - ai-image
+  - AI Video
+  - AI Audio
+  - Content Creation
+  - Marketing Automation
+  - Creative Tools
+  tags_raw:
   - generative-ai
   - ai-image
   - ai-video
@@ -77,6 +102,13 @@ apis:
   humanURL: https://xelta.ai/mcp
   baseURL: https://mcp.xelta.ai/mcp
   tags:
+  - MCP
+  - agent-native
+  - Generative AI
+  - ai-image
+  - AI Video
+  - Website Builder
+  tags_raw:
   - mcp
   - agent-native
   - generative-ai
