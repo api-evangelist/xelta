@@ -22,7 +22,7 @@ tags:
 - Marketing Ads
 - social-automation
 - MCP
-- agent-native
+- Agent-Native
 - Content Creation
 - Text-to-Video
 - Creative Tools
@@ -103,7 +103,7 @@ apis:
   baseURL: https://mcp.xelta.ai/mcp
   tags:
   - MCP
-  - agent-native
+  - Agent-Native
   - Generative AI
   - ai-image
   - AI Video
