@@ -24,7 +24,7 @@ tags:
 - MCP
 - Agent-Native
 - Content Creation
-- Text-to-Video
+- Video Generation
 - Creative Tools
 - Marketing Automation
 - social-media-content
@@ -47,6 +47,7 @@ tags_raw:
 - social-media-content
 - website-builder
 - credit-based-pricing
+- Text-to-Video
 apis:
 - name: Xelta AI Platform API
   description: 'Xelta''s REST API — 74 operations across seven tags (Auth, Models, Site Scan / Brand DNA, Community, Upload,
